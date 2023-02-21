@@ -8,7 +8,8 @@ public class Main {
 	public static ArrayList zero = new ArrayList<int[]>();
 	// 0이 나온 위치의 인덱스를 저장할 ArrayList
 	public static int[][] board = new int[9][9];
-	public static int[] array;
+	// 빈 칸에 위치할 값을 저장할 배열
+	public static int[] array; 
 	public static int count = 0; // 0이 나온 칸의 수
 	
 	public static void main(String[] args) throws IOException {
@@ -43,8 +44,6 @@ public class Main {
 					sb.append(array[depth++] + " ");
 				else 
 					sb.append(board[i][j] + " ");	
-				
-				
 			}
 			sb.append("\n");
 		}
