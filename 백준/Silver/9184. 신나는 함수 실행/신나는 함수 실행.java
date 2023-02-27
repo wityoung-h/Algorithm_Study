@@ -15,7 +15,7 @@ class Main {
     		String[] num = str.split(" ");
     		int value = goBack(Integer.parseInt(num[0]), Integer.parseInt(num[1]), Integer.parseInt(num[2]));
     		
-    		sb.append(String.format("w(%s, %s, %s) = %d", num[0], num[1], num[2], value) + "\n");
+    		sb.append("w(" + num[0] + ", " + num[1] + ", " + num[2] + ") = " + value + "\n");
     	}
 
     	System.out.print(sb);
