@@ -48,6 +48,11 @@ class Main {
     		
     		int dif = (int) Math.abs(teamA - teamB);
     		
+            if(dif == 0) {
+                System.out.print(0);
+                System.exit(0);
+            }
+            
     		min_gap = (min_gap > dif) ? dif : min_gap;
     		
     		return;
